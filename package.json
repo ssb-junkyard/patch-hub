@@ -2,6 +2,10 @@
   "name": "patch-git",
   "version": "0.0.1",
   "description": "patchbay-compatible interface for git-ssb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssbc/patch-git.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
