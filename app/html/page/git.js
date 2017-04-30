@@ -54,8 +54,8 @@ exports.create = function (api) {
       pull(
         next(api.sbot.pull.log, {old: false, limit: 100}),
         filterUpThrough(),
-        // pull.filter(msg => msg.value.content.type),
-        // pull.filter(msg => msg.value.content.type.match(/^git/)),
+        pull.filter(msg => msg.value.content.type),
+        pull.filter(msg => msg.value.content.type.match(/^git/)),
         Scroller(container, content, api.message.html.render, true, false)
       )
 

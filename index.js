@@ -1,11 +1,9 @@
-const nest = require('depnest')
+const bulk = require('bulk-require')
 
 module.exports = {
-  'patch-git': {
-    page: {
-      index: require('./app/html/page/git'),
-    }
-    // styles: require('./styles/mcss')
-  }
+  'patch-git': bulk(__dirname, [
+    // '!(app|message)/**/*.js'
+    '!(node_modules|junk)/**/*.js'
+  ])
 }
 

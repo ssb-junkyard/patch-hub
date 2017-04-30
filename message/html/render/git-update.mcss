@@ -1,0 +1,23 @@
+GitUpdate {
+  header {
+    font-size: 1.2rem
+    font-weight: 600
+
+    margin-bottom: .5rem
+  }
+
+  section {
+    display: flex
+
+    margin-bottom: .4rem
+
+    header {
+      flex-basis: 6rem
+      font-weight: 600
+    }
+    div {
+
+    }
+  }
+}
+

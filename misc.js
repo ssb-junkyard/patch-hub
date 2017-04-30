@@ -32,9 +32,6 @@ exports.gives = {
 
 var self_id = require('../keys').id
 
-function shortRefName(ref) {
-  return ref.replace(/^refs\/(heads|tags)\//, '')
-}
 
 exports.create = function (api) {
 
@@ -152,14 +149,6 @@ exports.create = function (api) {
     return t
   }
 
-  function renderIssueEdit(c) {
-    var id = c.issue || c.link
-    return [
-      c.title ? h('p', 'renamed issue ', api.message_link(id),
-        ' to ', h('ins', c.title)) : null,
-      c.open === false ? h('p', 'closed issue ', api.message_link(id)) : null,
-      c.open === true ? h('p', 'reopened issue ', api.message_link(id)) : null]
-  }
 
   function findMessageContent(el) {
     for(; el; el = el.parentNode) {
