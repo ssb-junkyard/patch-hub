@@ -1,10 +1,10 @@
 {
-  "name": "patch-git",
+  "name": "patch-hub",
   "version": "0.1.0",
   "description": "patchbay-compatible interface for git-ssb",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ssbc/patch-git.git"
+    "url": "git+https://github.com/ssbc/patch-hub.git"
   },
   "main": "index.js",
   "scripts": {
