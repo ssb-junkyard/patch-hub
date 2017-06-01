@@ -30,7 +30,9 @@ exports.create = function (api) {
   function renderContent (msg) { 
     const { repo, refs, commits = [] , commits_more, issues = [] } = msg.value.content
     return h('GitUpdate', [
-      h('header', api.git.obs.repoName(repo)),
+      h('header', [
+        h('a', { href: repo }, api.git.obs.repoName(repo))
+      ]),
       when(branchUpdates(refs).length, 
         h('section.branches', [
           h('header', 'branches'),
