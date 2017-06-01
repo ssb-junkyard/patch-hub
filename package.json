@@ -1,6 +1,6 @@
 {
   "name": "patch-hub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "patchbay-compatible interface for git-ssb",
   "repository": {
     "type": "git",
