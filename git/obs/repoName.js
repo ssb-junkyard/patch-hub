@@ -27,7 +27,7 @@ exports.create = function (api) {
       },
       api.keys.sync.id(), 
       id,
-      (err, avatar) => name.set(avatar.name)
+      (err, avatar) => name.set(avatar ? avatar.name : '')
     )
 
     return name
